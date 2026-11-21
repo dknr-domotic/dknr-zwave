@@ -19,6 +19,7 @@ La documentation détaillée est sur [dknr-domotic.github.io](https://dknr-domot
 - **Entités construites automatiquement** à partir des valeurs de chaque nœud : valeurs numériques, états, listes de choix, textes, boutons. La valeur courante et la valeur cible d'une commande (ex : état et consigne d'un interrupteur) forment une seule entité.
 - **Identifiant stable** : un appareil est identifié par son numéro de nœud, le renommer ou le déplacer dans Z-Wave JS UI ne change ni ses topics ni ses entités Home Assistant.
 - **Pilotage** de toutes les valeurs modifiables, y compris les paramètres de configuration.
+- **Position relue après un mouvement** : la position d'un volet ou d'un variateur (Multilevel Switch) est redemandée 60 secondes après son dernier changement, pour les appareils qui n'envoient pas leur position finale (ex : Fibaro FGR-223).
 - **Réseau** : état de la passerelle et du contrôleur, liste des nœuds (batterie, dernière activité, état), inclusion et exclusion, renommage, emplacement et suppression d'un nœud défaillant.
 - **Support Home-Assistant Discovery** en lecture et pilotage (capteurs, interrupteurs, nombres, sélecteurs, textes, boutons). Les paramètres de configuration sont créés désactivés et les entités d'un nœud mort deviennent indisponibles.
 
